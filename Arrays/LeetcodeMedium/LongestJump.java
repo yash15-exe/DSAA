@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.LeetcodeMedium;
 
 public class LongestJump {
     public boolean canJump(int[] nums) {
