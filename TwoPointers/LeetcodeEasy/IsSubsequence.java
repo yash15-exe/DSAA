@@ -1,24 +1,17 @@
-package Arrays;
+package TwoPointers.LeetcodeEasy;
 
-import java.util.*;
-
-class Solution {
+public class IsSubsequence {
     public boolean isSubsequence(String s, String t) {
-        if(s.isEmpty()){
-            return false;
-        }
         int i = 0;
+        if(s.isEmpty()){
+            return true;
+        }
         for(char c: t.toCharArray()){
             if(c == s.charAt(i)){
                 i++;
             }
-            if(i == s.length()-1)return true;
+            if(i > s.length()-1)return true;
         }
         return false;
     }
 }
-
-
-
-
-
