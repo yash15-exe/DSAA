@@ -25,6 +25,7 @@
 //        Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
 package Patterns.SlidingWindow;
 
+
 import java.util.HashSet;
 
 public class LongestSubstringWithoutRepeatingChar {
