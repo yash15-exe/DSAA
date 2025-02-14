@@ -7,7 +7,7 @@
 */
 
 
-package Patterns.SlidingWindow;
+package Patterns.ArraysAndStrings.SlidingWindow;
 
 import java.util.HashMap;
 import java.util.HashSet;

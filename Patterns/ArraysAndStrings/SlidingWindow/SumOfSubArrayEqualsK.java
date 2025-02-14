@@ -1,8 +1,6 @@
-package Patterns.SlidingWindow;
+package Patterns.ArraysAndStrings.SlidingWindow;
 
-import java.sql.Array;
 import java.util.ArrayList;
-import java.util.List;
 
 public class SumOfSubArrayEqualsK {
     static ArrayList<Integer> subarraySum(int[] arr, int target) {

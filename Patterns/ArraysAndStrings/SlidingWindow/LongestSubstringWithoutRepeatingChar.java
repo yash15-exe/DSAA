@@ -23,7 +23,7 @@
 //        Output: 3
 //        Explanation: The answer is "wke", with the length of 3.
 //        Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
-package Patterns.SlidingWindow;
+package Patterns.ArraysAndStrings.SlidingWindow;
 
 
 import java.util.HashSet;

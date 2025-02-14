@@ -5,10 +5,9 @@
 * exactly k unique characters. If no possible substring exists, print -1.
 *
 */
-package Patterns.SlidingWindow;
+package Patterns.ArraysAndStrings.SlidingWindow;
 
 import java.util.HashMap;
-import java.util.HashSet;
 
 public class LongestUniquesWithKUniques {
     public int longestkSubstr(String s, int k) {

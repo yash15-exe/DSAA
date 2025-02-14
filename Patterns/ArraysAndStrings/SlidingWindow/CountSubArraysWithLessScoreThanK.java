@@ -1,4 +1,4 @@
-package Patterns.SlidingWindow;
+package Patterns.ArraysAndStrings.SlidingWindow;
 
 public class CountSubArraysWithLessScoreThanK {
     public long countSubarrays(int[] nums, long k) {
@@ -13,7 +13,6 @@ public class CountSubArraysWithLessScoreThanK {
                 sum -= nums[l];
                 l++;
             }
-
 
             count += (r - l + 1);
         }
