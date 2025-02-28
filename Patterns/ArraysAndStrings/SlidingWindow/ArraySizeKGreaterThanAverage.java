@@ -8,8 +8,13 @@ package Patterns.ArraysAndStrings.SlidingWindow;
 public class ArraySizeKGreaterThanAverage {
     public int numOfSubArrays(int[] arr, int k, int threshold) {
         int sum = 0, count = 0;
-        int target = k * threshold;
 
+
+        int target = k * threshold;
+    /*You need to find subarrays of length k.
+    The average of each subarray must be at least threshold.
+    Since average = sum / k, the sum of each subarray must be at least k * threshold to satisfy this condition.
+    */
         for (int i = 0; i < k; i++) {
             sum += arr[i];
         }
