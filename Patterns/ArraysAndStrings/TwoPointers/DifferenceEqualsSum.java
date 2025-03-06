@@ -5,7 +5,15 @@ import java.util.Collections;
 import java.util.HashSet;
 
 public class DifferenceEqualsSum {
-
+    /*
+     * Using Sorting and Two Pointers (O(n log n) time complexity, O(1) space complexity):
+     * - First, we sort the array to bring order.
+     * - We use two pointers: one at the start (i) and one at the end (j).
+     * - We check if the difference between A[j] and A[i] equals B.
+     * - If the difference is greater than B, we move j left to decrease it.
+     * - If the difference is smaller, we move i right to increase it.
+     * - This ensures we efficiently find a valid pair if it exists.
+     */
     //using constant space and sorting O(n logn)
     public int solve(ArrayList<Integer> A, int B) {
         Collections.sort(A);
@@ -24,7 +32,13 @@ public class DifferenceEqualsSum {
         }
         return 0;
     }
-
+    /*
+     * Using HashSet for O(N) time complexity and O(N) space complexity:
+     * - We iterate through the array while storing elements in a HashSet.
+     * - For each element, we check if (num - B) or (num + B) is already in the set.
+     * - If found, it means there exists a pair with the required difference.
+     * - This approach eliminates the need for sorting and provides an optimal solution.
+     */
     //using hashset, O(N)
     public int solve1(ArrayList<Integer> A, int B) {
         HashSet<Integer> seen = new HashSet<>();
