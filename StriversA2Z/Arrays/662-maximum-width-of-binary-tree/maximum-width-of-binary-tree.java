@@ -37,7 +37,7 @@ class Solution {
 
             for (int i = 0; i < size; i++) {
                 NodeIndex current = queue.poll();
-                int currIndex = current.index - minIndex; // normalized index
+                int currIndex = current.index - minIndex;
 
                 if (i == 0) first = currIndex;
                 if (i == size - 1) last = currIndex;
